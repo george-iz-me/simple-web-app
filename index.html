@@ -1,62 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scae=1.0"> 
-        <link rel="stylesheet" href="./styles.css" />
-    </head>
-    <body>
-        <header id="header">
-            <h1> Simple Web Page</h1>
-            <nav >
-                <ul class="nav-links">
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <!--tells browser how to convert the text-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---responsiveness--->
+    <meta name="description" content="A simple and modern web page example." />
+    <title>Modern Simple Web Page</title>
+    <link rel="icon" href="hero-image.jpg" type="image" sizes="32x32" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Welcome to My Modern Web Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
-        <section class="section">
-            <div class="hero">
-                <h2>Your Journey Starts Here</h2>
-                <p>Discover the best solutions for your needs!</p>
-                <a href="/services"><button id="hero-button">Learn More</button></a>
-            </div>
-            <img src="/hero-image.jpg" alt="hero-image" id="hero-image"/>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Your Journey Starts Here</h2>
+        <p>Discover the best solutions for your needs.</p>
+        <a href="#about" class="hero-button">Learn More</a>
+      </div>
+      <img src="hero-image.jpg" alt="Hero Image" class="hero-image" />
+    </section>
 
-        <section class="section">
-            <div class="services">
-                <h2> Services </h2>
-                <ul class="service-list">
-                    <li>Web Design</li>
-                    <li>Digital Marketing</li>
-                    <li>IT Constulting</li>
-                </ul>
-            </div>
-        </section>
+    <main>
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          This is a modern and simple web page built with HTML and CSS. It uses
+          semantic elements for better accessibility and structure.
+        </p>
+      </section>
 
-        <section class="section">
-            <div class="contact-container">
-            <h2> Contact Form</h2>
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input class="contact-input" type="text" placeholder="name"/>
-                <label for="email">Email</label>
-                <input class="contact-input" type="email" placeholder="email" />
-                <label for="message">Message:</label>
-                <textarea class="contact-input" type="text" rows="5"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            </div>
-        </section>
-        </main>
+      <section id="services" class="section">
+        <h2>Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Frontend Development</li>
+          <li>Responsive Layouts</li>
+        </ul>
+      </section>
 
-        <footer>
-            <p>&copy; 2025 Simple Web Page. All rights reserved.</p>
-        </footer>
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-    </body>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Modern Simple Web Page. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
