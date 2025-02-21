@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scae=1.0"> 
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header id="header">
+            <h1> Simple Web Page</h1>
+            <nav >
+                <ul class="nav-links">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <section class="section">
+            <div class="hero">
+                <h2>Your Journey Starts Here</h2>
+                <p>Discover the best solutions for your needs!</p>
+                <a href="/services"><button id="hero-button">Learn More</button></a>
+            </div>
+            <img src="/hero-image.jpg" alt="hero-image" id="hero-image"/>
+        </section>
+
+        <section class="section">
+            <div class="services">
+                <h2> Services </h2>
+                <ul class="service-list">
+                    <li>Web Design</li>
+                    <li>Digital Marketing</li>
+                    <li>IT Constulting</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="contact-container">
+            <h2> Contact Form</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input class="contact-input" type="text" placeholder="name"/>
+                <label for="email">Email</label>
+                <input class="contact-input" type="email" placeholder="email" />
+                <label for="message">Message:</label>
+                <textarea class="contact-input" type="text" rows="5"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Simple Web Page. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>
